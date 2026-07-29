@@ -32,6 +32,10 @@ int main(){
     int target;
     printf("enter the search element: ");
     scanf("%d",&target);
+    clock_t start =clock();
     linear_search(array,n,target);
+    clock_t end =clock();
+    double time_taken=((double)(end-start))/CLOCKS_PER_SEC;
+    printf("time taken in %.9f",time_taken);
     return 0;
 }
