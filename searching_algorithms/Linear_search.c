@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<time.h>
 void linear_search(int array[],int n, int target){
     int flag=0;
     int index;
